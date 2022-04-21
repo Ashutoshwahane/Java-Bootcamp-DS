@@ -16,6 +16,7 @@ public class Shadowing {
 
         // armstrong number are 153, 370, 371, 407
         armstrongNumber(370);
+
     }
 
     void sum() {

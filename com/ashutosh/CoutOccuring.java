@@ -1,16 +1,28 @@
 package com.ashutosh;
 
-public class CoutOccuring {
+import java.util.Scanner;
+
+
+
+class CoutOccuring {
     public static void main(String[] args) {
-        int n = 1241526;
-        int count = 0;
-        while (n > 0){
-            int rem = n % 10;
-            if (rem == 5){
-                count++;
+
+        int no = 5;
+        int temp = 0;
+        for (int i = 1; i <= no; i++) {
+            if (i % 3 == 0){
+                System.out.println("Bad no");
+                temp++;
+                i++;
+            }else {
+                temp = i;
             }
-            n = n/10;
         }
-        System.out.println("occur : " + count);
+
+        System.out.println(temp+"");
+
+
+
     }
 }
+
